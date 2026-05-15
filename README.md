@@ -70,8 +70,14 @@ The rover automatically:
 
 ---
 
+
 ## Project Images
-!(Images/Front View Of Robotic Car.jpg)
+
+### Front View
+![Front View](Images/front_view.jpg)
+
+### Side View
+![Side View](Images/side_view.png)
 
 
 ---
