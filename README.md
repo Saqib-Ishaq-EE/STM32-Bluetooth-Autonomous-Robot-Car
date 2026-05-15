@@ -71,7 +71,7 @@ The rover automatically:
 ---
 
 ## Project Images
-!(Images/Front View of Robotic Car.jpg)
+!(Images/Front View Of Robotic Car.jpg)
 
 
 ---
