@@ -1,6 +1,6 @@
 /*
  * ==========================================================================
- *  STM32F103 Blue Pill — Rover: Manual + Auto Obstacle Avoidance + Buzzer
+ *  STM32F103 Blue Pill â€” Rover: Manual + Auto Obstacle Avoidance + Buzzer
  *
  *  BUG FIX: 999 (sensor timeout) now correctly treated as CLEAR.
  *
@@ -581,7 +581,7 @@ uint8_t distance_is_blocked(uint32_t d)
 }
 
 /* ================================================================
- *  SCAN LEFT AND RIGHT — shared helper
+ *  SCAN LEFT AND RIGHT â€” shared helper
  *
  *  Rotates servo left, reads distance, then right, reads distance,
  *  then returns servo to center. Writes results into the pointers.
@@ -654,20 +654,20 @@ void execute_turn(uint8_t dir)
 /* ================================================================
  *  AUTO MODE OBSTACLE SCAN  [UPDATED LOGIC]
  *
- *  PART 1 — Find a clear lateral direction:
+ *  PART 1 â€” Find a clear lateral direction:
  *    Scan left, then right.
  *    If both sides <= 35cm: scan again (2nd pass).
  *    If still both blocked: reverse briefly, then restart the
  *    whole sequence from the top.
  *
- *  PART 2 — Confirm it is safe to move before turning:
+ *  PART 2 â€” Confirm it is safe to move before turning:
  *    Once a clear lateral side is found, re-check the FRONT.
  *    Threshold for front re-check is FRONT_RECHECK_CM (20cm).
  *
- *    Case A — front > 20cm:
+ *    Case A â€” front > 20cm:
  *      Safe to proceed. Turn toward the clear side immediately.
  *
- *    Case B — front <= 20cm:
+ *    Case B â€” front <= 20cm:
  *      Still too close. Reverse briefly, then:
  *        - Scan left and right again.
  *        - Check front again (servo at center).
@@ -761,7 +761,7 @@ void auto_mode_obstacle_scan(void)
         USART1_SendString("\r\n");
 
         /* --------------------------------------------------
-         *  Case A: front > 20cm — safe to turn immediately
+         *  Case A: front > 20cm â€” safe to turn immediately
          * -------------------------------------------------- */
 
         if(dist_front > FRONT_RECHECK_CM)
@@ -774,7 +774,7 @@ void auto_mode_obstacle_scan(void)
         }
 
         /* --------------------------------------------------
-         *  Case B: front <= 20cm — reverse first, then
+         *  Case B: front <= 20cm â€” reverse first, then
          *  re-scan left + right + front again.
          * -------------------------------------------------- */
 
@@ -809,7 +809,7 @@ void auto_mode_obstacle_scan(void)
 
         if(dist_front > FRONT_RECHECK_CM)
         {
-            /* Front is now clear — turn toward safe side */
+            /* Front is now clear â€” turn toward safe side */
             USART1_SendString("  Front clear after reverse. Turning.\r\n");
 
             execute_turn(turn_dir);
@@ -820,7 +820,7 @@ void auto_mode_obstacle_scan(void)
         if(clear_left || clear_right)
         {
             /* Front still close but we reversed and a side is clear.
-             * Turn now — the backup already created enough room. */
+             * Turn now â€” the backup already created enough room. */
             USART1_SendString("  Front tight but lateral clear. Turning.\r\n");
 
             execute_turn(turn_dir);
@@ -828,7 +828,7 @@ void auto_mode_obstacle_scan(void)
             return;
         }
 
-        /* All sides still blocked after reverse — restart outer loop */
+        /* All sides still blocked after reverse â€” restart outer loop */
         USART1_SendString("  All sides blocked after reverse. Retrying...\r\n");
     }
 
