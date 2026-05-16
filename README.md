@@ -79,7 +79,9 @@ The rover automatically:
 ### Side View
 ![Side View](Images/side_view.png)
 
+## Rover Demonstration
 
+[![Watch Demo](Images/front_view.jpg)](https://drive.google.com/file/d/1zgULUEi6h4sX7NEUxgvqHrl7vx0i_oMl/view?usp=sharing)
 ---
 
 ## Future Improvements
