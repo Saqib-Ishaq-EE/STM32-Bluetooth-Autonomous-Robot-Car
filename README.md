@@ -85,7 +85,7 @@ The rover automatically:
 ---
 ## Project Report
 
-[Download Full Project Report](Project Report/Final_Report.pdf)
+[Download Full Project Report](Project Report/Project_Report.pdf)
 ## Future Improvements
 
 * ESP32-CAM live video streaming
