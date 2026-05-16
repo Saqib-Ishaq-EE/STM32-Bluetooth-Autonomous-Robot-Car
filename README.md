@@ -83,9 +83,6 @@ The rover automatically:
 
 [![Watch Demo](Images/front_view.jpg)](https://drive.google.com/file/d/1zgULUEi6h4sX7NEUxgvqHrl7vx0i_oMl/view?usp=sharing)
 ---
-## Project Report
-
-[Download Full Project Report](Project Report/Project_Report.pdf)
 ## Future Improvements
 
 * ESP32-CAM live video streaming
