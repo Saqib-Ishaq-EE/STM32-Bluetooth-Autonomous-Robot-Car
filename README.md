@@ -1,4 +1,4 @@
-# STM32 Dual-Mode Autonomous Rover
+# STM32 Dual-Mode Autonomous Robotic Car
 
 ## Overview
 
