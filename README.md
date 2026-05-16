@@ -79,7 +79,7 @@ The rover automatically:
 ### Side View
 ![Side View](Images/side_view.png)
 
-## Rover Demonstration
+## Robotic Car Demo Video
 
 [![Watch Demo](Images/front_view.jpg)](https://drive.google.com/file/d/1zgULUEi6h4sX7NEUxgvqHrl7vx0i_oMl/view?usp=sharing)
 ---
@@ -90,7 +90,8 @@ The rover automatically:
 * GPS navigation
 * NRF24L01 long-range communication
 * AI-based object detection
-* Line following mode
+* Path Planning
+* Multiple Sensor for Obstacle detection to remove the time delay due to servo
 
 ---
 
