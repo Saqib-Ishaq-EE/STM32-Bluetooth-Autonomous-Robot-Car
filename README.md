@@ -32,6 +32,7 @@ The project was developed as an embedded systems and robotics learning platform 
 * L298N Motor Driver
 * DC Gear Motors
 * Li-ion Battery Pack
+* LM2596 Buck Converter
 * Chassis Kit
 
 ---
@@ -55,9 +56,8 @@ The rover receives commands from a mobile phone through Bluetooth:
 * Backward
 * Left
 * Right
-* Stop
 * Speed Control
-
+  Rover will keep moving untill button is pressed, when button released rover will stop moving
 ### Autonomous Mode
 
 The rover automatically:
